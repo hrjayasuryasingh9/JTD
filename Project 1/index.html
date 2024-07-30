@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('image.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; 
+            margin: 0; 
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        
+        #main {
+            background: rgb(255, 255, 255,0.2); 
+            backdrop-filter: blur(10px); 
+            border-radius: 10px; 
+            width: 80%;
+            height: 90%;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+        }
+        #nav {
+            background: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(10px);
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            height: 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+        #check {
+            width: 25px;
+            padding-right: 10px;
+        }
+        #p {
+            
+            margin: 0;
+            padding-left: 10px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        table{
+            backdrop-filter: blur(10px);
+            border-radius: 10px ;
+            width: 95%;
+            height: 85%;
+            margin-top: 15px;
+            border-collapse: collapse;
+            overflow: hidden;
+            justify-items: center;
+        }
+        thead{
+            background: rgba(255, 255, 255, 0.3);
+        }
+        #pic {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+            background: black;
+            margin-right: 10px;
+            margin-left: 0;
+            background-size: cover;
+            background-position: center;
+        }
+        #Delivered{
+            width: 100px;
+            height: 20px;
+            background-color: rgb(88, 234, 88);
+            border-radius: 10px;
+            text-align: center;
+            color: rgb(4, 85, 4);
+        }
+        #Cancelled{
+            width: 100px;
+            height: 20px;
+            background-color: rgb(238, 74, 74);
+            border-radius: 10px;
+            text-align: center;
+            color: rgb(140, 14, 14);
+            line-height: 20px;
+        }
+        #Shipped{
+            width: 100px;
+            height: 20px;
+            background-color: rgb(105, 213, 237);
+            border-radius: 10px;
+            text-align: center;
+            color: rgb(6, 43, 129);
+            line-height: 20px;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: rgba(255, 255, 255, 0.6); /* Light color */
+        }
+        tbody tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.3); /* Darker color */
+        }
+        th, td {
+            padding: 0px;
+            text-align: left;
+            border: none;
+            padding-left: 10px;
+        }
+        thead{
+            width: auto;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="p">Customer's Orders</div>
+             <img src="check.png" alt="" id="check">
+        </div>
+        <table>
+            <thead>
+                <tr >
+                    <th>id</th>
+                    <th>Customer</th>
+                    <th>Location</th>
+                    <th>Order Date</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><div id="pic" style="background-image: url(download.jpg);"></div>Harshi</td>
+                    <td>Seoul</td>
+                    <td>17 Dec, 2022</td>
+                    <td><div id="Delivered">Delivered</div></td>
+                    <td>$128.90</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><div id="pic" style="background-image: url(images\ \(3\).jpg);"></div>Surya</td>
+                    <td>Paris</td>
+                    <td>27 Aug, 2023</td>
+                    <td><div id="Cancelled">Cancelled</div></td>
+                    <td>$5350.50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><div id="pic" style="background-image: url(images\ \(1\).jpg);"></div>Sonal</td>
+                    <td>Tokyo</td>
+                    <td>14 Mar, 2023</td>
+                    <td><div id="Shipped">Shipped</div></td>
+                    <td>$210.40</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><div id="pic" style="background-image: url(download\ \(1\).jpg);"></div>Alson</td>
+                    <td>Delhi</td>
+                    <td>25 May, 2023</td>
+                    <td><div id="Delivered">Delivered</div></td>
+                    <td>$148.70</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><div id="pic" style="background-image: url(images\ \(2\).jpg);"></div>Sirisha</td>
+                    <td>Kathmandu</td>
+                    <td>23 Apr, 2023</td>
+                    <td><div id="Shipped">Shipped</div></td>
+                    <td>$399.99</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><div id="pic" style="background-image: url(images.jpg);"></div>Alexa</td>
+                    <td>London</td>
+                    <td>23 Apr, 2023</td>
+                    <td><div id="Cancelled">Cancelled</div></td>
+                    <td>$399.99</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><div id="pic" style="background-image: url(download\ \(2\).jpg);"></div>Sonal</td>
+                    <td>Tokyo</td>
+                    <td>14 Mar, 2023</td>
+                    <td><div id="Shipped">Shipped</div></td>
+                    <td>$210.40</td>
+                </tr>
+            
+        </tbody>
+        </table>
+    </div>
+</body>
+</html>
