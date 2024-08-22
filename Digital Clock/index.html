@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .main {
+            background-color: #252a34;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .main .name{
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        .container {
+            border: 3px solid #08d9d6;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding:10px;
+        }
+        .container > div{
+            border-radius: 20px;
+            border: 2px solid #08d9d6;
+            height: 60px;
+            width: 260px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container h1{
+            font-size: 20px;
+            color: white;
+        }
+        .container div p{
+            color: #08d9d6;
+            font-size: 30px;
+        }
+        .container div p span{
+            color: white ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="name">Digital Clock</h1>
+        <div class="container">
+            <h1>Time</h1>
+            <div class="time">
+                <p><span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span></p>
+            </div>
+            <h1>Date</h1>
+            <div>
+                <p><span class="date">00</span>/<span class="month">00</span>/<span class="year">0000</span></p>
+            </div>
+            <h1>Day</h1>
+            <div>
+                <p><span class="day">T</span></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function(){
+        const hour = document.querySelector(".hour");
+        const minute =document.querySelector(".minute");
+        const second = document.querySelector(".second");
+        const date=document.querySelector(".date");
+        const month=document.querySelector(".month");
+        const year=document.querySelector(".year");
+        const day=document.querySelector(".day");
+        const days=["Sunday","Monday","Tuesday","Webnesday","Thursday","Friday","Saturday"];
+
+        function setItem(){
+        now=new Date();
+        months=now.getMonth()+1;
+        const d=now.getDay();
+        if (parseInt(now.getMinutes())>9){
+            minute.innerHTML=`${now.getMinutes()}`;
+        }
+        else{
+            minute.innerHTML=`0${now.getMinutes()}`;
+        }
+
+        if (parseInt(now.getHours())>9){
+            hour.innerHTML=`${now.getHours()}`;
+        }
+        else{
+            hour.innerHTML=`0${now.getHours()}`;
+        }
+        if (parseInt(now.getSeconds())>9){
+            second.innerHTML=`${now.getSeconds()}`;
+        }
+        else{
+            second.innerHTML=`0${now.getSeconds()}`;
+        }
+        if (months>9){
+            month.innerHTML=`${months}`;
+        }
+        else{
+            month.innerHTML=`0${months}`;
+        }
+        if (parseInt(now.getDate())>9){
+            date.innerHTML=`${now.getDate()}`;
+        }
+        else{
+            date.innerHTML=`0${now.getDate()}`;
+        }
+        year.innerHTML=`${now.getFullYear()}`;
+        day.innerHTML=`${days[d]}`;
+        }
+
+        setInterval(setItem,1000);
+    }
+
+
+    </script>
+</body>
+
+</html>
