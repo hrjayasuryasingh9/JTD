@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-black py-3 sticky-top">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center main-nav"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class=""><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto w-50">
+            <li class="nav-item">
+              <a class="mx-3 A" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="mx-3 A" href="#collections">COLLECTIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="mx-3 A" href="#products">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="mx-3 A" href="#Blogs">BLOGS</a>
+            </li>
+            <li class="nav-item">
+              <a class="mx-3 A" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="A navbarbrand" href="#">HOMIES CLOTHINGS</a>
+
+        <a class="Cart" href="cart.html"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+      </div>
+    </nav>
+    <section class="Home" id="home">
+      <div class="container-fluid">
+        <div class="row p-4">
+          <div class="col-lg-6 p-5">
+            <div class="my-5">
+              <h1 class="Main my-3">Chick Charisma</h1>
+              <p class="pb-5">
+                Effortless <br />
+                Glamour For <br />
+                Every Occasions
+              </p>
+              <button class="cart">
+                <a href="#products" class="Shop-Now">Shop Now</a>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 p-div py-5">
+            <div class="picture py-5"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="collections" id="collections">
+      <div class="container-fluid text-center py-5">
+        <h1 class="">TOP COLLECTIONS</h1>
+        <p>Popular Collections</p>
+        <div class="row text-center d-flex justify-content-center gap-5 py-5">
+          <div class="col-md-4 card2">
+            <div class="daba">
+              <h1>Chasing Urban Allure</h1>
+              <button class="cart">
+                <a href="#products" class="Shop-Now">Shop Now</a>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 card1">
+            <div class="daba">
+              <h1>Urban Aesthetic, Digital Impact</h1>
+              <button class="cart">
+                <a href="#products" class="Shop-Now">Shop Now</a>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4 card3">
+            <div class="daba">
+              <h1>The Pulse of Innovation</h1>
+              <button class="cart">
+                <a href="#products" class="Shop-Now">Shop Now</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products" id="products">
+      <div class="container-fluid py-5">
+        <h1 class="text-center">TOP PRODUCTS</h1>
+        <p class="best text-center">Best Sellers</p>
+        <h1 class="heading px-4 py-3 m-auto">Men Shirts</h1>
+        <div
+          class="row d-flex flex-nowrap justify-content-start"
+          id="product-row-men"
+        ></div>
+        <h1 class="heading px-4 py-3 m-auto">Other Products</h1>
+        <div
+          class="row d-flex flex-nowrap justify-content-start"
+          id="product-row-women"
+        ></div>
+      </div>
+    </section>
+    <section class="discounts">
+      <div class="container-fluid">
+        <div class="row p-5">
+          <div class="col-lg-6 p-5">
+            <img src="assets/banner2.jpg" alt="" class="img-fluid w-70" />
+          </div>
+          <div class="col-lg-6 text-center p-5 discount">
+            <h1>UPTO 60% OFF</h1>
+            <h4>
+              Unleash Your Style Potential with Our Spectacular Clothing Sale
+            </h4>
+            <p>
+              Unleash your style potential with our spectacular clothing sale!
+              Find unbeatable prices on a wide selection of outfits to elevate
+              your wardrobe for any occasion.
+            </p>
+            <button class="cart m-4">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Top-brands">
+      <div class="container-fluid py-5">
+        <h1 class="text-center">TOP BRANDS</h1>
+        <p class="best text-center">Popular Brands</p>
+        <div
+          class="row d-flex flex-nowrap justify-content-start m-5"
+          id="Brandings"
+        ></div>
+      </div>
+    </section>
+    <section class="Blogs" id="Blogs">
+      <div class="container-fluid py-5">
+        <h1 class="text-center">LATEST POSTS</h1>
+        <p class="best text-center">Blogs & Insights</p>
+        <div
+          class="row d-flex flex-nowrap justify-content-start py-5"
+          id="Blog-row"
+        ></div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container-fluid py-5 text-center">
+        <div class="row py-5">
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="feature d-flex justify-content-around">
+              <div class="rounded-circle">
+                <i class="fa-solid fa-truck"></i>
+              </div>
+              <div class="content">
+                <h1>Free Shipping</h1>
+                <p>Free Shipping For Order Over $130</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="feature d-flex justify-content-around">
+              <div class="rounded-circle">
+                <i class="fa-solid fa-credit-card"></i>
+              </div>
+              <div class="content">
+                <h1>Money Guarantee</h1>
+                <p>Within 30 days for an exchange</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="feature d-flex justify-content-around">
+              <div class="rounded-circle">
+                <i class="fa-solid fa-wallet"></i>
+              </div>
+              <div class="content">
+                <h1>Flexible Payment</h1>
+                <p>Pay with Multiple Credit Cards</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="feature d-flex justify-content-around">
+              <div class="rounded-circle">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div class="content">
+                <h1>Online Support</h1>
+                <p>24 hours a day, 7 days a week</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container-fluid py-5">
+        <p class="text-center best">Contact Now</p>
+        <h1 class="text-center">Signup for our newsletter & gets 50% off</h1>
+        <div class="input-box d-flex justify-content-center py-3">
+          <form action="">
+            <input type="text" class="cart" placeholder="email" />
+            <button class="cart">Submit</button>
+          </form>
+        </div>
+        <div class="row p-5">
+          <div class="col-lg-3 py-3">
+            <h1 class="main">Homies Clothings</h1>
+            <p>
+              Homies Fashions: Where Comfort Meets Style – Elevate your everyday
+              look with trendy, affordable, and stylish apparel designed for the
+              modern lifestyle.
+            </p>
+            <div class="icons">
+              <div class="rounded-circle">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="rounded-circle">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="rounded-circle">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <div class="rounded-circle">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 py-3">
+            <h1>About us</h1>
+            <p>
+              Our Story <br />
+              Mission & Values <br />
+              Meet the team <br />
+              Sustainability Efforts <br />
+              Brand Partnerships <br />
+              Influencer Collaborations <br />
+            </p>
+          </div>
+          <div class="col-lg-3 py-3">
+            <h1>Accessibility</h1>
+            <p>
+              Our Story <br />
+              Mission & Values <br />
+              Meet the team <br />
+              Sustainability Efforts <br />
+              Brand Partnerships <br />
+              Influencer Collaborations <br />
+            </p>
+          </div>
+          <div class="col-lg-3 py-3">
+            <h1>Join Our Community</h1>
+            <p>
+              Our Story <br />
+              Mission & Values <br />
+              Meet the team <br />
+              Sustainability Efforts <br />
+              Brand Partnerships <br />
+              Influencer Collaborations <br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+:root {
+  --main-bg: white;
+  --secondary-bg: #cbd5e1;
+  --secondary-tc: #6b7a90;
+  --normal-font: sans-serif;
+  --secondary-font: "Kaushan Script", cursive;
+  --main-tc: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg: black;
+    --secondary-bg: #19191a;
+    --main-tc: #ffffff;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--normal-font);
+  color: var(--main-tc);
+}
+body {
+  background: var(--main-bg);
+}
+.navbar {
+  background-color: var(--main-bg);
+  color: var(--main-tc);
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.A {
+  color: var(--main-tc);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.Cart {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbarbrand {
+  padding-right: 400px;
+  font-size: 30px;
+  text-decoration: none;
+  color: var(--main-tc);
+  font-family: var(--secondary-font);
+  font-weight: 600;
+}
+@media (max-width: 1290px) {
+  .navbarbrand {
+    padding-right: 300px;
+  }
+}
+@media (max-width: 1220px) {
+  .navbarbrand {
+    padding-right: 200px;
+  }
+}
+@media (max-width: 1140px) {
+  .navbarbrand {
+    padding-right: 200px;
+  }
+}
+@media (max-width: 1080px) {
+  .navbarbrand {
+    padding-right: 100px;
+  }
+}
+@media (max-width: 991px) {
+  .navbarbrand {
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 595px) {
+  .navbarbrand {
+    font-size: 20px;
+  }
+}
+
+.Home .container-fluid {
+  background-color: var(--secondary-bg);
+}
+.Home .p-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Home .picture {
+  width: 500px;
+  height: 75vh;
+  background: url(./assets/banner4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.Home h1 {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+}
+.Home p {
+  font-family: "Acme", sans-serif;
+  font-size: 70px;
+}
+.Home button {
+  font-family: sans-serif;
+  padding: 18px 40px;
+  font-size: 20px;
+  background: var(--main-tc);
+  color: var(--main-bg);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+@media (max-width: 595px) {
+  .Home p {
+    font-size: 50px;
+  }
+}
+
+.Home button:hover {
+  transform: scale(1.07);
+}
+
+.collections {
+  background: var(--main-bg);
+}
+
+.collections h1 {
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.collections p {
+  font-size: 45px;
+  font-weight: 600;
+}
+.carousel {
+  width: 90%;
+  height: 80vh;
+}
+.collections .card1 {
+  background: url(./assets/banner5.jpg) no-repeat;
+  background-position: 90%;
+  background-size: cover;
+  width: 300px;
+  height: 450px;
+  position: relative;
+}
+.collections .card2 {
+  background: url(assets/col2.jpg) no-repeat;
+  background-position: 90%;
+  background-size: cover;
+  width: 300px;
+  height: 450px;
+  position: relative;
+}
+.collections .card3 {
+  background: url(assets/col5.jpg) no-repeat;
+  background-position: 40%;
+  background-size: cover;
+  width: 300px;
+  height: 450px;
+  position: relative;
+}
+.cart {
+  font-family: sans-serif;
+  font-size: 20px;
+  background: var(--main-tc);
+  color: var(--main-bg);
+  padding: 10px 35px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.cart:hover {
+  transform: scale(1.07);
+}
+.daba h1 {
+  font-family: var(--secondary-font);
+  font-size: 30px;
+}
+.daba {
+  position: absolute;
+  bottom: 5%;
+}
+
+/* products */
+.products {
+  background: var(--secondary-bg);
+}
+.products h1 {
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.products .best {
+  font-size: 45px;
+  font-weight: 600;
+}
+.card {
+  background: var(--main-bg);
+}
+.card-title {
+  font-size: 20px;
+  color: var(--main-tc);
+  font-family: sans-serif;
+}
+.card-text {
+  font-size: 20px;
+  color: var(--main-tc);
+  font-weight: 600;
+}
+
+.products .row {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.products .heading {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.discounts .container-fluid {
+  background: var(--main-bg);
+}
+
+.discounts .discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.discount h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+}
+.discount p {
+  font-size: 20px;
+}
+
+/* Top-brands */
+
+.Top-brands {
+  background: var(--secondary-bg);
+}
+.Top-brands h1 {
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.Top-brands .best {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.Top-brands .row {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.Top-brands .brand {
+  width: 150px;
+  height: 120px;
+}
+
+.Blogs {
+  background: var(--main-bg);
+}
+.Blogs h1 {
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.Blogs .best {
+  font-size: 45px;
+  font-weight: 600;
+}
+.blog {
+  background-color: var(--secondary-bg);
+  height: 460px;
+  width: 340px;
+  border-radius: 10px;
+}
+.blog img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.blog div {
+  display: flex;
+  justify-content: space-between;
+}
+.blog p {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.blog h1 {
+  font-size: 23px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.Blogs .row {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.features .container-fluid {
+  background: var(--secondary-bg);
+}
+.features .feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features .feature .rounded-circle {
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--main-tc);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features .feature .rounded-circle i {
+  font-size: 30px;
+}
+.features .feature h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.contact .container-fluid {
+  background: var(--main-bg);
+}
+.contact .icons {
+  display: flex;
+}
+.contact .icons .rounded-circle {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border: 1px solid var(--main-tc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+}
+.contact .main {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: var(--secondary-font);
+}
+.contact .row .col-lg-3 h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.contact h1 {
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.contact .best {
+  font-size: 45px;
+  font-weight: 600;
+}
+.input-box {
+  position: relative;
+}
+.input-box button {
+  display: none;
+}
+.Product-View .container-fluid {
+  background: var(--secondary-bg);
+}
+.Product-View .product-image {
+  width: 528px;
+  height: auto;
+}
+.Product-View .price {
+  font-size: 40px;
+}
+
+.sizes .btn-group .btnsn {
+  width: 50px;
+  font-size: 18px;
+  margin-right: 5px;
+  border: 1px solid var(--main-tc);
+  background: transparent;
+}
+
+.sizes .btnsn.selected {
+  background: var(--main-tc);
+  color: var(--main-bg);
+  border-color: var(--main-tc);
+}
+.quantity .input-group input {
+  width: 60px;
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  color: var(--main-tc);
+}
+.Cart-view {
+  background-color: var(--secondary-bg);
+}
+.cart .Shop-Now {
+  text-decoration: inherit;
+  color: inherit;
+}
+.Cart-view {
+  background-color: var(--secondary-bg);
+  height: 90vh;
+}
+.Cart-view .card {
+  background: var(--main-bg);
+}
+
+.cart1 {
+  font-family: sans-serif;
+  font-size: 20px;
+  background: var(--main-tc);
+  color: var(--main-bg);
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.Cart-view .row {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+.Cart-view .row .card-body p {
+  font-size: 18px;
+  color: var(--main-tc);
+}
