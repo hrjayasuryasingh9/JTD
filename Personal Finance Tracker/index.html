@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main d-flex justify-content-center align-items-center mt-4">
+      <div class="container-fluid">
+        <div class="header p-3">
+          <h1>Finance Tracker</h1>
+          <button class="header-button">
+            <i class="fa-solid fa-circle-plus"></i> Add
+          </button>
+        </div>
+        <div class="row p-4">
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center"
+          >
+            <div class="transaction-container">
+              <div class="pop-up">
+                <h1 class="text-center p-2">Enter Details</h1>
+                <div class="d-flex justify-content-around align-items-center">
+                  <p>Remaining Budget:</p>
+                  <p id="Remaining"></p>
+                </div>
+
+                <div class="input">
+                  <div class="Amount">
+                    <label for="">Amount</label
+                    ><input type="number" class="no-spinner" />
+                  </div>
+                  <div class="Category">
+                    <label for="">Category</label>
+                    <select name="" id="">
+                      <option value="Food" data-color="bowl-food">Food</option>
+                      <option
+                        value="Entertainment"
+                        data-color="face-smile-beam"
+                      >
+                        Entertainment
+                      </option>
+                      <option value="Rent" data-color="building">Rent</option>
+                      <option value="Others" data-color="layer-group">
+                        Others
+                      </option>
+                    </select>
+                  </div>
+                  <div class="buttons">
+                    <button class="Record" id="Record">Record</button>
+                    <button class="Cancel">Cancel</button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="transaction-header d-flex justify-content-around align-items-center w-100"
+              >
+                <h1>Transactions</h1>
+                <button id="Edit">Edit</button>
+              </div>
+              <div class="Transactions"></div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center flex-column"
+          >
+            <div class="pop-up-Budget">
+              <h1 class="text-center p-2">Budget</h1>
+              <div class="Amount py-2">
+                <label for="">Current Budget</label><span>Not set</span>
+              </div>
+              <div class="Amount py-2">
+                <label for="">New</label><input type="number" />
+              </div>
+              <div class="buttons pt-2">
+                <button class="Record" id="Record-Budget">Change</button>
+                <button class="Cancel" id="Cancel-Budget">Cancel</button>
+              </div>
+            </div>
+            <div class="pop-up-Income">
+              <h1 class="text-center p-2">Income</h1>
+              <div class="Amount py-2">
+                <label for="">Current Income</label><span>Not set</span>
+              </div>
+              <div class="Amount py-2">
+                <label for="">New</label><input type="number" />
+              </div>
+              <div class="buttons pt-2">
+                <button class="Record" id="Record-Income">Change</button>
+                <button class="Cancel" id="Cancel-Income">Cancel</button>
+              </div>
+            </div>
+            <div class="pop-up-Savings">
+              <h1 class="text-center p-2">Expected Savings</h1>
+              <div class="Amount py-2">
+                <label for="">Current Savings</label><span>Not set</span>
+              </div>
+              <div class="Amount py-2">
+                <label for="">New</label><input type="number" />
+              </div>
+              <div class="buttons pt-2">
+                <button class="Record" id="Record-Savings">Change</button>
+                <button class="Cancel" id="Cancel-Savings">Cancel</button>
+              </div>
+            </div>
+            <div class="visualization py-2">
+              <h1>Visualization</h1>
+            </div>
+            <div class="buttons-details">
+              <button id="Budget">Budget</button>
+              <button id="Income">Income</button>
+              <button id="Savings">Savings</button>
+            </div>
+            <div class="chart">
+              <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

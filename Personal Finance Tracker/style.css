@@ -1,0 +1,363 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  transform: scale(1.1);
+}
+.main {
+  background-color: #1e1f20;
+  min-width: 350px;
+  width: 80%;
+  border-radius: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.header-button {
+  color: #310e5e;
+  background: #d773eb;
+  width: 30%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+.transaction-container {
+  min-width: 330px;
+  width: 90%;
+  height: 75vh;
+  border-radius: 10px;
+  background: #131415;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.transaction-container h1 {
+  color: white;
+  padding: 10px 20px;
+  font-size: 27px;
+}
+.Transactions {
+  width: 95%;
+  height: 85%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.transaction {
+  margin: 10px 0px;
+  width: 98%;
+  height: 7vh;
+  background-color: #1e1f20;
+  border-radius: 8px;
+  border: 1px solid #5e5d5d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+.transaction .bowl-food {
+  color: #17c867;
+  margin: 20px;
+}
+.transaction .face-smile-beam {
+  color: #c8c517;
+  margin: 20px;
+}
+.transaction .building {
+  color: #17c8bc;
+  margin: 20px;
+}
+.transaction .layer-group {
+  color: #c817bc;
+  margin: 20px;
+}
+.categorie-symbol-bowl-food {
+  margin: 7px;
+  background-color: #59a37a93;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #17c867;
+  font-size: 20px;
+}
+.categorie-symbol-face-smile-beam {
+  margin: 7px;
+  background-color: #a3985993;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #c8c517;
+  font-size: 20px;
+}
+.categorie-symbol-building {
+  margin: 7px;
+  background-color: #599ea393;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #17c8bc;
+  font-size: 20px;
+}
+.categorie-symbol-layer-group {
+  margin: 7px;
+  background-color: #a3598793;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #c817bc;
+  font-size: 20px;
+}
+.date {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #9b8f8f;
+}
+.pop-up {
+  min-width: 320px;
+  width: 30%;
+  height: 40%;
+  position: absolute;
+  background-color: #1e1f20;
+  border-radius: 10px;
+  border: 1px solid #5e5d5d;
+  display: none;
+  z-index: 100;
+}
+.pop-up h1 {
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+}
+.pop-up p {
+  padding-left: 20px;
+  color: white;
+  font-size: 20px;
+}
+.pop-up #Remaining {
+  color: #17c867;
+  font-size: 25px;
+  font-weight: 600;
+}
+.Amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.Amount label {
+  color: white;
+  padding: 0px 10px;
+}
+.Amount input {
+  background-color: #2d2d2d;
+  border: 1px solid #5e5d5d;
+  outline: none;
+  border-radius: 5px;
+  width: 70%;
+  height: 40px;
+  color: white;
+  padding: 0px 10px;
+}
+.Category {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.Category label {
+  color: white;
+  padding: 0px 10px;
+}
+.Category select {
+  color: white;
+  background-color: #2d2d2d;
+  border: 1px solid #5e5d5d;
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons button {
+  width: 44%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  margin: 10px;
+}
+.Cancel {
+  color: #5e0e25;
+  background: #eb5e6a;
+}
+.Record {
+  color: #0e125e;
+  background: #7973eb;
+}
+.buttons-details {
+  width: 100%;
+}
+.buttons-details button {
+  width: 28%;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px;
+}
+.buttons-details #Budget {
+  color: #5e0e46;
+  background: #eb73e7;
+}
+.buttons-details #Income {
+  color: #0e4e5e;
+  background: #73cfeb;
+}
+.buttons-details #Savings {
+  color: #0e5e29;
+  background: #73eb9d;
+}
+.transaction-header button {
+  color: #5e2a0e;
+  background: #eba173;
+}
+#Delete {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fe3333;
+  color: rgb(100, 16, 16);
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 1px 7px;
+  top: -20%;
+  left: 95%;
+}
+.transaction-header button {
+  width: 28%;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px;
+}
+.visualization h1 {
+  color: white;
+}
+.pop-up-Budget {
+  min-width: 320px;
+  width: 30%;
+  height: 35%;
+  position: absolute;
+  background-color: #1e1f20;
+  border-radius: 10px;
+  border: 1px solid #5e5d5d;
+  z-index: 100;
+  display: none;
+}
+.pop-up-Budget h1 {
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+}
+.pop-up-Budget span {
+  color: #17c867;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.pop-up-Income {
+  min-width: 320px;
+  width: 30%;
+  height: 35%;
+  position: absolute;
+  background-color: #1e1f20;
+  border-radius: 10px;
+  border: 1px solid #5e5d5d;
+  z-index: 100;
+  display: none;
+}
+.pop-up-Income h1 {
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+}
+.pop-up-Income span {
+  color: #17c867;
+  font-size: 25px;
+  font-weight: 600;
+}
+.pop-up-Savings {
+  min-width: 320px;
+  width: 30%;
+  height: 35%;
+  position: absolute;
+  background-color: #1e1f20;
+  border-radius: 10px;
+  border: 1px solid #5e5d5d;
+  z-index: 100;
+  display: none;
+}
+.pop-up-Savings h1 {
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+}
+.pop-up-Savings span {
+  color: #17c867;
+  font-size: 25px;
+  font-weight: 600;
+}
+.custom-confirm-button {
+  color: #0e125e !important;
+  background-color: #7973eb;
+  border: none;
+  border-radius: 7px;
+}
