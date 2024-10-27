@@ -1,0 +1,355 @@
+:root {
+  --main-bg: black;
+  --overlaf-bg: #1f1f1f;
+  --placeholder-tc: #a8a8a8;
+  --overlay-ol-bg: #373737;
+  --medium: #ff6333;
+  --high: #13ae85;
+  --low: #718cfd;
+  --main-tc: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.main .container-fluid {
+  height: 100vh;
+  background-color: var(--main-bg);
+}
+.row {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main .container-fluid .main-box {
+  min-height: 80vh;
+  max-width: 70%;
+  min-width: 340px;
+  border-radius: 15px;
+  /* position: relative; */
+  background: var(--overlaf-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .container-fluid .main-box .main-content {
+  min-height: inherit;
+  max-width: 100%;
+  min-width: 100%;
+  position: relative;
+}
+.Head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.Heading {
+  font-size: 30px;
+  color: var(--main-tc);
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.row-of-items {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 40px;
+}
+.row-of-items button {
+  min-width: 120px;
+  width: 20%;
+  height: 5vh;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.All {
+  background: #d2e74e;
+  color: #4c560deb;
+}
+.High {
+  background-color: #3fc7a3;
+  color: #085440;
+}
+.Medium {
+  background-color: #ef724d;
+  color: #69220c;
+}
+.Low {
+  background-color: #718bf3;
+  color: #0c1c5d;
+}
+.add {
+  min-width: 200px;
+  width: 25%;
+  height: 6vh;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #a066ec;
+  color: #310e5e;
+  transition: all 0.3s ease-in-out;
+}
+
+.row-of-items button:hover {
+  transform: scale(110%);
+}
+.add:hover {
+  transform: scale(110%);
+}
+
+.popup {
+  height: 55vh;
+  min-width: 300px;
+  width: 40%;
+  background-color: var(--overlay-ol-bg);
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.popup input {
+  background-color: var(--overlaf-bg);
+  outline: none;
+  width: 70%;
+  height: 5vh;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--main-tc);
+  transition: all 0.3s ease-in-out;
+}
+
+.popup input::placeholder {
+  color: var(--placeholder-tc);
+}
+.boxes {
+  width: 80%;
+}
+.boxes input {
+  width: 60%;
+}
+.boxes input::placeholder {
+  color: var(--placeholder-tc);
+}
+.popup label {
+  color: var(--main-tc);
+  font-size: 16px;
+}
+.popup .popup-head {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.popup select {
+  background-color: var(--overlaf-bg);
+  outline: none;
+  width: 70%;
+  height: 5vh;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--main-tc);
+}
+.buttons-box {
+  width: 70%;
+  padding: 10px 0px;
+}
+.buttons-box .add {
+  min-width: 130px;
+  width: 25%;
+  height: 6vh;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #a066ec;
+  color: #310e5e;
+  transition: all 0.3s ease-in-out;
+}
+.Cancel {
+  min-width: 130px;
+  width: 25%;
+  height: 6vh;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #ec666f;
+  color: #5c0e13;
+  transition: all 0.3s ease-in-out;
+}
+.Cancel:hover {
+  transform: scale(110%);
+}
+.task-head {
+  color: var(--main-tc);
+}
+.todo {
+  background-color: var(--overlay-ol-bg);
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  transition: all 0.3s ease-in-out;
+}
+.tasks {
+  color: var(--main-tc);
+  font-weight: 600;
+  font-size: 30px;
+}
+.task-head h1 {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+.todo-main .High {
+  width: 100px;
+  height: 30px;
+  background-color: #3fc7a3;
+  color: #085440;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-main .Medium {
+  width: 100px;
+  height: 30px;
+  background-color: #ef724d;
+  color: #69220c;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-main .Low {
+  width: 100px;
+  height: 30px;
+  background-color: #718bf3;
+  color: #0c1c5d;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-main {
+  width: 60%;
+}
+.Completed {
+  width: 50%;
+  height: 5vh;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.Completed:hover {
+  transform: scale(110%);
+}
+.done {
+  background-color: #43b6e0;
+  color: #0f4255;
+}
+.Delete {
+  background-color: #ec666f;
+  color: #5c0e13;
+}
+.Delete:hover {
+  transform: scale(110%);
+}
+.task-buttons {
+  width: 30%;
+}
+.task-header {
+  color: var(--placeholder-tc);
+}
+@media (max-width: 1100px) {
+  .Completed {
+    font-size: 15px;
+    font-weight: 400;
+    width: 70px;
+  }
+}
+@media (max-width: 953px) {
+  .row-of-items {
+    justify-content: space-around;
+    padding: 0px 10px;
+  }
+  .row {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .row-of-items button {
+    width: 45%;
+  }
+  .add {
+    width: 50%;
+  }
+  .task-buttons {
+    width: 100%;
+  }
+  .todo-main {
+    width: 100%;
+  }
+  .Completed {
+    font-size: 18px;
+    font-weight: 600;
+    width: 50%;
+  }
+}
+.TODO-container {
+  display: flex;
+  height: 50vh;
+}
+
+.TODO-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 100%;
+  width: 100%;
+}
+/* 
+#deadlineTime {
+  background-color: white;
+  color: black;
+} */
+
+.deadline-passed {
+  background-color: #f16d78;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: grey;
+}
+
+button.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
